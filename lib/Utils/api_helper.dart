@@ -6,7 +6,7 @@ class ApiHelper {
     Uri uri = Uri.parse(apiLink);
     var response = await http.post(uri, body: {"name": name, "job": job});
     if (response.statusCode == 201) {
-      return "got success";
+      return "get success!!";
     }
     return "Something went wrong";
   }
